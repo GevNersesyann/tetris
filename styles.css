@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #222;
+}
+
+.tetris {
+  display: inline-block;
+  border: 2px solid #fff;
+  background-color: #000;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(20, 30px);
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #222;
+}
+
+.cell.active {
+  background-color: #00f;
+}
+
+.cell.filled {
+  background-color: #f00;
+}
+
+.score {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.game-over {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
